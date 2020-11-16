@@ -57,7 +57,7 @@ public class MedicoTest {
     }
     @Test
     public void remove(){
-        medicoService.delete((medico2);
+        medicoService.delete(medico2.getIdMedico());
         Assert.assertEquals(2,medicoService.list().size());
     }
 
